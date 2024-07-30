@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSA", "DSA\DSA.csproj", "{89D8C56F-C46B-4CC3-AAB7-7BAAC1D98266}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnionFind", "UnionFind\UnionFind.csproj", "{89D8C56F-C46B-4CC3-AAB7-7BAAC1D98266}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modual2", "Modual2\Modual2.csproj", "{A5AC223E-F131-4FDF-B5D9-C1596098429B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickFind", "QuickFind\QuickFind.csproj", "{34B17D97-C998-49FF-A1E2-A22B8A878FDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +14,9 @@ Global
 		{89D8C56F-C46B-4CC3-AAB7-7BAAC1D98266}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89D8C56F-C46B-4CC3-AAB7-7BAAC1D98266}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89D8C56F-C46B-4CC3-AAB7-7BAAC1D98266}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A5AC223E-F131-4FDF-B5D9-C1596098429B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5AC223E-F131-4FDF-B5D9-C1596098429B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5AC223E-F131-4FDF-B5D9-C1596098429B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5AC223E-F131-4FDF-B5D9-C1596098429B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34B17D97-C998-49FF-A1E2-A22B8A878FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34B17D97-C998-49FF-A1E2-A22B8A878FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34B17D97-C998-49FF-A1E2-A22B8A878FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34B17D97-C998-49FF-A1E2-A22B8A878FDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
