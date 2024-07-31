@@ -37,3 +37,20 @@ qu.Union(6, 1);
 Console.WriteLine(qu.Connected(1,3));
 Console.WriteLine(qu.Connected(1,4));
 Console.WriteLine(qu.Connected(6,3));
+
+
+Console.WriteLine("---------Weighted Quick Union----------");
+WeightedQuickUnion wqu = new WeightedQuickUnion(10);
+
+Console.WriteLine(wqu.Connected(1, 2));
+Console.WriteLine(wqu.Connected(1, 3));
+Console.WriteLine(wqu.Connected(1, 4));
+
+wqu.Union(1, 2);
+wqu.Union(2, 3);
+wqu.Union(6, 1);
+
+Console.WriteLine(wqu.Connected(1, 3));
+Console.WriteLine(wqu.Connected(1, 4));
+Console.WriteLine(wqu.Connected(6, 3));
+
