@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnionFind", "UnionFind\UnionFind.csproj", "{89D8C56F-C46B-4CC3-AAB7-7BAAC1D98266}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickFind", "QuickFind\QuickFind.csproj", "{34B17D97-C998-49FF-A1E2-A22B8A878FDB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisjointSet", "DisjointSet\DisjointSet.csproj", "{34B17D97-C998-49FF-A1E2-A22B8A878FDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
