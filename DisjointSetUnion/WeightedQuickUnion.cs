@@ -1,4 +1,4 @@
-﻿namespace DisjointSet;
+﻿namespace DisjointSetUnion;
 
 /// <summary>
 /// 解決Quick Union樹過高導致Find Root過慢的問題

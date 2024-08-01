@@ -1,4 +1,4 @@
-﻿namespace DisjointSet;
+﻿namespace DisjointSetUnion;
 
 /// <summary>
 /// Tree can get tall

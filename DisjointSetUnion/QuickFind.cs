@@ -1,4 +1,4 @@
-﻿namespace DisjointSet;
+﻿namespace DisjointSetUnion;
 
 /// <summary>
 /// 效能: 初始化: n, Union: n  => 若有n個數列，要耗費 n²的時間

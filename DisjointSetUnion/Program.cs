@@ -1,4 +1,4 @@
-﻿using DisjointSet;
+﻿using DisjointSetUnion;
 
 //有一組數列int[]
 //index為編號, 可以Union使兩個點的value相等
