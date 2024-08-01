@@ -54,3 +54,14 @@ Console.WriteLine(wqu.Connected(1, 3));
 Console.WriteLine(wqu.Connected(1, 4));
 Console.WriteLine(wqu.Connected(6, 3));
 
+Console.WriteLine("---------Weighted Quick Union + Path Compression----------");
+PathCompression pc = new PathCompression(7);
+
+pc.Union(1, 2);
+pc.Union(3, 4);
+pc.Union(2, 3);
+pc.Union(5, 6);
+pc.Union(4, 5);
+
+pc.Connected(1, 6);
+pc.Connected(2, 3);
