@@ -2,8 +2,8 @@
 
 public class FixedCapacityStackOfStrings
 {
-    private readonly string[] _stacks;
-    private int _n = 0;
+    private readonly string?[] _stacks;
+    private int _n;
     
     public FixedCapacityStackOfStrings(int capacity)
     {
@@ -12,5 +12,10 @@ public class FixedCapacityStackOfStrings
 
     public void Push(string s) => _stacks[_n++] = s;
 
-    public string Pop() => _stacks[--_n];
+    public string? Pop()
+    {
+        var item = _stacks[--_n];
+        _stacks[_n] = null;
+        return item;
+    }
 }
