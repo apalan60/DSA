@@ -53,3 +53,7 @@
         - 當前狀態：
             - `Back 堆疊`：[Page A, Page B]
             - `Forward 堆疊`：[]
+  
+  ### 比較LinkedList && ResizingArrayStackOfString
+  後者快一些，記憶體占用也較少一點
+  但Resize()時會突然有比較大的loading，LinkedList則是相對穩定
