@@ -1,6 +1,8 @@
-﻿namespace Stack;
+﻿using System.Collections;
 
-public class LinkedListStackOfObjects<TItem>
+namespace Stack;
+
+public class LinkedListStackOfObjects<TItem> : IEnumerable<TItem>
 {
     private Node? _first;
     
@@ -33,5 +35,20 @@ public class LinkedListStackOfObjects<TItem>
         _first = _first.Next;
 
         return item;
+    }
+
+    public IEnumerator<TItem> GetEnumerator()
+    {
+        var current = _first;
+        while (current != null)
+        {
+            yield return current.Item;
+            current = current.Next;
+        }
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator();
     }
 }

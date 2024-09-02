@@ -1,4 +1,6 @@
-﻿namespace Stack;
+﻿using System.Collections;
+
+namespace Stack;
 
 /// <summary>
 /// 在FixedCapacityStackOfStrings版本，無法解決使用者不知道陣列該有幾個元素的問題
@@ -10,7 +12,7 @@
 /// 導致更多的 resize 操作，進而增加了攤還成本。
 /// 透過在 1/4 閾值時縮減容量，減少了頻繁 resize 的可能性，從而降低了 resize 操作的攤還成本
 /// </summary>
-public class ResizingArrayStackOfString
+public class ResizingArrayStackOfString : IEnumerable<string?>
 {
     private string?[] _stack;
     private int _index;
@@ -52,5 +54,18 @@ public class ResizingArrayStackOfString
             copy[i] = _stack[i];
         }
         _stack = copy;
+    }
+
+    public IEnumerator<string?> GetEnumerator()
+    {
+        var oldIndex = _index;
+        while (_index > 0)
+            yield return _stack[--_index];
+        _index = oldIndex;
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator();
     }
 }
