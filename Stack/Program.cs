@@ -19,3 +19,14 @@ linkListStackOfStrings.Push("three");
 Console.WriteLine(linkListStackOfStrings.Pop());
 Console.WriteLine(linkListStackOfStrings.Pop());
 Console.WriteLine(linkListStackOfStrings.Pop());
+
+
+Console.WriteLine("-------Generic Stack--------");
+var linkedListStackOfObjects = new LinkedListStackOfObjects<int>();
+linkedListStackOfObjects.Push(1);
+linkedListStackOfObjects.Push(2);
+linkedListStackOfObjects.Push(3);
+
+Console.WriteLine(linkedListStackOfObjects.Pop());
+Console.WriteLine(linkedListStackOfObjects.Pop());
+Console.WriteLine(linkedListStackOfObjects.Pop());
